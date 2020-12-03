@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { initialDecks } from "../mockdata/CardData";
 
 const Navbar = () => {
-    const decks = initialDecks
+    const decks = initialDecks;
 
     return (
         <div className="navbar">

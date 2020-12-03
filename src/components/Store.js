@@ -1,8 +1,7 @@
 import React from "react";
 
-import { initialCards, initialInventory } from '../mockdata/CardData'
-
 import Card from "./Card";
+import { initialCards, initialInventory } from "../mockdata/CardData";
 
 export default () => {
   const buyCard = (cardId) => console.log('Buy Card Coming Soon', cardId);
