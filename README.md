@@ -346,7 +346,7 @@ not present (yet). You can reset the local storage in *Chrome dev tools* on the
 ## Bonus C
 
 If you implemented `LocalStorage`, you'll soon be wanting a way to return cards
-to the store. Otherwise known as deleting them from the player's deck. Go ahead
+to the store - otherwise known as deleting them from the player's deck. Go ahead
 and implement this now.
 
 > Hint: A new function in the context may prove to be useful.
