@@ -43,6 +43,10 @@ functions that update these variables.
 
 ### Define the *context* and its *provider*
 
+Create a folder in `src` called `context`. Inside of the `context` folder,
+create a file called `AppContext.js`. In this file, define the following
+function component.
+
 The props of the function will include one variable named `children`. This 
 variable is built into *React*. It holds a collection of JSX content passed to
 the component between its opening and closing tags (which you'll do in the App 
@@ -90,10 +94,10 @@ return (
 
 ### Wrap the application in the *provider*
 
-Open _App.js_. Import the new class you just made. Place it in the application 
-such that all components that need to use the context are wrapped inside of it.
-In other words, those components are children (or grandchildren, etc.) of the
-context provider.
+Open _App.js_. Import the new provider you just made. Place it in the
+application  such that all components that need to use the context are wrapped
+inside of it. In other words, those components are children (or grandchildren,
+etc.) of the context provider.
 
 > Tip: This is a good time to commit an update to `git` and push up to *GitHub*.
 

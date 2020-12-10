@@ -1,7 +1,6 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 
-import { initialDecks } from "../mockdata/CardData";
+import { initialDecks } from "../../mockdata/CardData";
 
 const Navbar = () => {
     const decks = initialDecks;

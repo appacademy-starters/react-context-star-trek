@@ -1,5 +1,4 @@
-import React from "react";
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 
 import Deck from "./components/Deck";
 import Store from "./components/Store";
@@ -12,16 +11,18 @@ const App = () => {
       <p>
         Here you can buy and sell cards in order to build your ultimate deck!
       </p>
-        <BrowserRouter>
-          <Navbar />
-          <Switch>
-            <Route exact path="/store" component={Store} />
-            <Route path="/deck/:id" component={Deck} />
-            <Route path="/">
-                <Redirect to="/store" />
-            </Route>
-          </Switch>
-        </BrowserRouter>
+      <Navbar />
+      <Switch>
+        <Route exact path="/store">
+          <Store />
+        </Route>
+        <Route path="/deck/:id">
+          <Deck />
+        </Route>
+        <Route path="/">
+          <Redirect to="/store" />
+        </Route>
+      </Switch>
     </>
   );
 };

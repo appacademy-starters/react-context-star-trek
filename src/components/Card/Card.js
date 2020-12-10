@@ -1,5 +1,3 @@
-import React from "react";
-
 const Card = ({ imgUrl, content}) => {
   return (
     <div className="card">

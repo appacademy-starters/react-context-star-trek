@@ -1,8 +1,7 @@
-import React from "react";
 import { useParams } from 'react-router-dom'
 
-import Card from "./Card";
-import { initialDecks } from "../mockdata/CardData";
+import Card from "../Card";
+import { initialDecks } from "../../mockdata/CardData";
 
 const Deck = () => {
   const { id } = useParams();

@@ -1,9 +1,7 @@
-import React from "react";
+import Card from "../Card";
+import { initialCards, initialInventory } from "../../mockdata/CardData";
 
-import Card from "./Card";
-import { initialCards, initialInventory } from "../mockdata/CardData";
-
-export default () => {
+const Store = () => {
   const buyCard = (cardId) => console.log('Buy Card Coming Soon', cardId);
   const inventory = initialInventory;
   const cards = initialCards;
@@ -24,3 +22,5 @@ export default () => {
     </div>
   );
 };
+
+export default Store;
