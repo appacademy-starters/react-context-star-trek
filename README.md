@@ -339,7 +339,7 @@ function component.
 
 You've probably noticed that when the browser refreshes, all the cards in the
 player's deck return to the store. If you'd like them to be persisted, then you
-can use `LocalStorage` to save and restore.
+can use `localStorage` to save and restore.
 
 Remember to use the mock data for the initial state when the local storage is 
 not present (yet). You can reset the local storage in *Chrome dev tools* on the
@@ -349,7 +349,7 @@ not present (yet). You can reset the local storage in *Chrome dev tools* on the
 
 ## Bonus C
 
-If you implemented `LocalStorage`, you'll soon be wanting a way to return cards
+If you implemented `localStorage`, you'll soon be wanting a way to return cards
 to the store - otherwise known as deleting them from the player's deck. Go ahead
 and implement this now.
 
