@@ -79,7 +79,7 @@ the appropriate constant from the class in `mockdata`.
 In case you're stuck, here are a few hints...
 
 ```javascript
-import { initialCards } from "./mockdata/CardData";
+import { initialCards } from "../mockdata/CardData";
 
 // component function and other stuff
 
@@ -215,7 +215,7 @@ set up some debugging to make it easier to verify that your code is working as
 expected. A `useEffect` hook is particularly useful in this situation.
 
 Since you have to pick some place to start, it might as well be the inventory.
-Please any and all `useEffect` calls outside of any functions (probably between 
+Place any and all `useEffect` calls outside of any functions (probably between 
 the function definition you added in phase 2, and the `return` of the context
 provider).
 
